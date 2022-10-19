@@ -1,0 +1,67 @@
+Source: websocketpp
+Section: libs
+Priority: optional
+Maintainer: Gianfranco Costamagna <locutusofborg@debian.org>
+Build-Depends: cmake,
+               debhelper-compat (= 12),
+               libboost-chrono-dev,
+               libboost-dev,
+               libboost-random-dev,
+               libboost-system-dev,
+               libboost-test-dev,
+               libboost-thread-dev,
+               libssl-dev,
+               zlib1g-dev,
+               scons
+Build-Depends-Indep: doxygen, ghostscript, texlive-font-utils
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://github.com/zaphoyd/websocketpp
+Vcs-Git: https://salsa.debian.org/debian/websocketpp.git
+Vcs-Browser: https://salsa.debian.org/debian/websocketpp
+
+Package: libwebsocketpp-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}
+Description: C++/Boost Asio based websocket client/server library. Dev package
+ WebSocket++ is a header only C++ library that implements RFC6455 The WebSocket
+ Protocol. It allows integrating WebSocket client and server functionality into
+ C++ programs. It uses interchangeable network transport modules including one
+ based on C++ iostreams and one based on Boost Asio.
+ .
+ Major Features:
+  * Full support for RFC6455
+  * Partial support for Hixie 76 / Hybi 00, 07-17 draft specs (server only)
+  * Message/event based interface
+  * Supports secure WebSockets (TLS), IPv6, and explicit proxies.
+  * Flexible dependency management (C++11 Standard Library or Boost)
+  * Interchangeable network transport modules (iostream and Boost Asio)
+  * Portable/cross platform (Posix/Windows, 32/64bit, Intel/ARM/PPC)
+  * Thread-safe
+ .
+ This package contains the header files.
+
+Package: libwebsocketpp-doc
+Architecture: all
+Section: doc
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: C++/Boost Asio based websocket client/server library. Doc package
+ WebSocket++ is a header only C++ library that implements RFC6455 The WebSocket
+ Protocol. It allows integrating WebSocket client and server functionality into
+ C++ programs. It uses interchangeable network transport modules including one
+ based on C++ iostreams and one based on Boost Asio.
+ .
+ Major Features:
+  * Full support for RFC6455
+  * Partial support for Hixie 76 / Hybi 00, 07-17 draft specs (server only)
+  * Message/event based interface
+  * Supports secure WebSockets (TLS), IPv6, and explicit proxies.
+  * Flexible dependency management (C++11 Standard Library or Boost)
+  * Interchangeable network transport modules (iostream and Boost Asio)
+  * Portable/cross platform (Posix/Windows, 32/64bit, Intel/ARM/PPC)
+  * Thread-safe
+ .
+ This package contains the common documentation.
