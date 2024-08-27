@@ -1,8 +1,10 @@
-websocketpp (0.8.2-3) UNRELEASED; urgency=medium
+websocketpp (0.8.2-4) unstable; urgency=medium
 
-  * update
+  * debian/patches/1024.patch:
+    - upstream-proposed patch from László Böszörményi to fix a build failure
+      with scons 4.2.0 (Closes: #1003022)
 
- -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 16 May 2022 20:24:22 +0800
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 14 Feb 2022 14:14:37 +0100
 
 websocketpp (0.8.2-3) unstable; urgency=medium
 
